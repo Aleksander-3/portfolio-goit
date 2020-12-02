@@ -1,0 +1,129 @@
+:root {
+	/* background */
+	--c-dark: #141d2d;
+	--c-light: #fff;
+	--c-accent: #ff6b08;
+
+	--c-dark-blue: #253045;
+	--c-grey-blue: #4a5771;
+	--c-grey-light: #f1f2f2;
+	--c-grey: #bcc1d2;
+
+	/* text */
+	--txt-c-dark: var(--c-dark);
+	--txt-c-grey: #4f5b70;
+	--txt-c-grey-light: var(--c-grey-light);
+	--txt-c-accent: var(--c-accent);
+	--txt-c-light: var(--c-light);
+
+	/* font */
+	--font-main: "Acrom", sans-serif;
+
+	/* container width */
+	--vertical-scroll: 20px;
+	--mobile: calc(300px + var(--vertical-scroll));
+	--tablet: calc(640px + var(--vertical-scroll));
+	--desktop: calc(900px + var(--vertical-scroll));
+	--desktop-lg: calc(1146px + var(--vertical-scroll));
+
+	/* animation */
+	--animation-fast: 0.1s;
+	--animation-slow: 0.3s;
+}
+
+@font-face {
+	font-family: "Acrom";
+	src: url("../fonts/Acrom-ExtraBold.eot");
+	src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"),
+		url("../fonts/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Acrom-ExtraBold.woff") format("woff"), url("../fonts/Acrom-ExtraBold.ttf") format("truetype");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Acrom";
+	src: url("../fonts/Acrom-Bold.eot");
+	src: local("Acrom Bold"), local("Acrom-Bold"), url("../fonts/Acrom-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Acrom-Bold.woff") format("woff"), url("../fonts/Acrom-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Acrom";
+	src: url("../fonts/Acrom-Regular.eot");
+	src: local("Acrom Regular"), local("Acrom-Regular"),
+		url("../fonts/Acrom-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Acrom-Regular.woff") format("woff"), url("../fonts/Acrom-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "Acrom", sans-serif;
+	box-sizing: border-box;
+}
+.navigation {
+	width: 100%;
+	display: flex;
+}
+.logo-link {
+}
+.hire-me-btn {
+	font-weight: 800;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--txt-c-accent);
+}
+.mobile-menu {
+	width: 30px;
+	height: 30px;
+	background-color: var(--c-accent);
+	display: block;
+}
+.mobile-menu i {
+	color: var(--c-light);
+	width: 10px;
+}
+.front-page {
+	width: 320px;
+	background-color: var(--c-dark);
+	color: var(--txt-c-grey-light);
+	padding: 30px 10px 55px 10px;
+}
+.front-page-my-name {
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 31px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--txt-c-accent);
+}
+.front-page-professional {
+	font-size: 35px;
+	line-height: 42px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.front-page-description {
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	margin-bottom: 22px;
+}
+.fron-page-button {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 298px;
+	height: 60px;
+	line-height: 60px;
+	left: 11px;
+	top: 363px;
+	background-color: var(--c-accent);
+	text-transform: uppercase;
+	font-size: 15px;
+}
