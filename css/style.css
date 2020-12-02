@@ -64,9 +64,31 @@ body {
 	font-family: "Acrom", sans-serif;
 	box-sizing: border-box;
 }
+/* COMMON */
+.accent-btn {
+	background: var(--c-accent);
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--txt-c-light);
+	padding: 10px 35px;
+	outline: none;
+	border: none;
+}
+/* FRONT PAGE */
 .navigation {
 	width: 100%;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.navigation-menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 .logo-link {
 }
@@ -78,16 +100,20 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--txt-c-accent);
+	margin-right: 20px;
 }
 .mobile-menu {
 	width: 30px;
 	height: 30px;
 	background-color: var(--c-accent);
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 }
 .mobile-menu i {
 	color: var(--c-light);
-	width: 10px;
 }
 .front-page {
 	width: 320px;
@@ -102,28 +128,53 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--txt-c-accent);
+	margin: 35px 0 10px 0;
 }
 .front-page-professional {
 	font-size: 35px;
 	line-height: 42px;
 	text-align: center;
 	text-transform: uppercase;
+	margin: 0 0 20px 0;
 }
 .front-page-description {
 	font-size: 16px;
 	line-height: 150%;
 	text-align: center;
-	margin-bottom: 22px;
+	margin: 0 0 20px 0;
 }
-.fron-page-button {
-	text-align: center;
-	margin: 0 auto;
-	max-width: 298px;
+.fron-page-gallery-btn {
+	width: 298px;
 	height: 60px;
-	line-height: 60px;
-	left: 11px;
-	top: 363px;
-	background-color: var(--c-accent);
-	text-transform: uppercase;
+	margin-bottom: 40px;
 	font-size: 15px;
+	line-height: 18px;
+}
+.fron-page-my-photo {
+	width: 100px;
+	margin-bottom: 20px;
+}
+.fron-page-my-description {
+	font-size: 15px;
+	line-height: 140%;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.fron-page-my-video-btn {
+	padding: 10px 40px;
+	background: transparent;
+	text-transform: uppercase;
+	border: 2px solid var(--c-accent);
+	color: var(--txt-c-accent);
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: right;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.fron-page-my-video-btn .fa-play {
+	font-size: 10px;
 }
