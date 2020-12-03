@@ -222,9 +222,15 @@ body {
 .expirience-dots {
 	display: flex;
 	align-items: center;
-	color: var(--txt-c-accent);
-	font-size: 10px;
+	color: var(--c-grey-blue);
+	font-size: 8px;
 	margin: 0 10px 0 0;
+}
+.expirience-dots-item {
+	margin: 0 5px 0 0;
+}
+.expirience-dots-item-accent {
+	color: var(--txt-c-accent);
 }
 .expirience-text {
 	color: var(--txt-c-light);
