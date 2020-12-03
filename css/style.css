@@ -76,6 +76,7 @@ body {
 	padding: 10px 35px;
 	outline: none;
 	border: none;
+	cursor: pointer;
 }
 /* !FRONT PAGE */
 .navigation {
@@ -116,14 +117,8 @@ body {
 	color: var(--c-light);
 }
 .front-page {
-	width: 320px;
 	background-color: var(--c-dark);
 	color: var(--txt-c-grey-light);
-	padding: 30px 10px 55px 10px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 .front-page-my-name {
 	font-weight: bold;
@@ -149,8 +144,6 @@ body {
 }
 .front-page-gallery-btn {
 	margin-bottom: 40px;
-	font-size: 15px;
-	line-height: 18px;
 	padding: 20px 35px;
 }
 .front-page-my-photo {
@@ -405,6 +398,7 @@ body {
 .team-projects .container {
 	position: relative;
 	overflow-x: hidden;
+	padding-bottom: 0;
 }
 
 .team-projects-title {
@@ -441,4 +435,181 @@ body {
 
 .team-project-item:last-child {
 	margin-bottom: 0;
+}
+/* !CALLBACK FORM SECTION */
+.callback-form {
+	padding-bottom: 40px;
+}
+.callback-form .container {
+	padding-bottom: 0;
+}
+.callback-form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--c-dark);
+	padding: 35px 30px 40px 30px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.callback-form-title {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+	color: var(--txt-c-light);
+	width: 260px;
+}
+.callback-form-descr {
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	margin: 0 0 30px 0;
+	color: var(--txt-c-light);
+	width: 260px;
+}
+.callback-form-input {
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid var(--c-dark-blue);
+	width: 241px;
+	padding: 10px 10px 15px 10px;
+	margin: 0 0 31px 0;
+	text-align: center;
+	color: var(--txt-c-grey);
+}
+.callback-form-submit {
+	padding: 15px 25px;
+}
+/* !CALCULATOR */
+.calculator {
+	background: var(--c-dark);
+}
+.calculator-title {
+	width: 270px;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--txt-c-light);
+	margin: 30px 20px 20px 20px;
+}
+.calculator-subtitle {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 150%;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--txt-c-light);
+	margin: 0 0 35px 0;
+}
+.calculator-subtitle span {
+	padding: 5px;
+	background-color: var(--c-accent);
+}
+.calculator-subtitle .calculator-subtitle-accent {
+	padding: 5px 10px;
+}
+.calculator-image {
+	width: 190px;
+	margin: 0 0 20px 0;
+}
+.calculator-descr {
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	color: var(--txt-c-light);
+	margin: 0 0 30px 0;
+}
+.calc-form {
+	background: var(--c-light);
+	padding: 30px;
+	margin-bottom: 15px;
+}
+.calc-form-input {
+	display: flex;
+	flex-direction: column;
+}
+.calc-form-title {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 150%;
+	margin: 0 0 15px 0;
+}
+.calc-form-select {
+	width: 240px;
+	border: none;
+	border-bottom: 1px solid var(--c-grey-blue);
+	margin: 0 0 25px 0;
+}
+.calc-form-input-radio-container {
+	margin: 0 0 30px 0;
+}
+.calc-form-total {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 150%;
+	margin: 0;
+}
+.calc-form-total-cost {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 150%;
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+.calc-form-btn {
+	padding: 15px 30px 15px 10px;
+	margin-bottom: 10px;
+}
+/* !FOOTER */
+.footer-name {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	margin: 0 30px 0 30px;
+}
+.footer-title {
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	margin: 0 30px 20px 30px;
+}
+.footer-phone {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	text-decoration: none;
+	color: var(--txt-c-dark);
+	margin: 0 0 15px 0;
+}
+.footer-mail {
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	text-decoration: none;
+	color: var(--txt-c-dark);
+	margin: 0 0 30px 0;
+}
+.footer-social {
+	display: flex;
+	flex-direction: row;
+}
+.footer-social a {
+	background: transparent;
+}
+.footer-social .fab {
+	color: var(--c-dark);
+	width: 100%;
+	text-decoration: none;
+	padding: 0 15px 0 15px;
+	font-size: 25px;
 }

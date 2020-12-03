@@ -14,7 +14,7 @@
 
 	<!-- !FRONT PAGE-->
 
-	<section class="front-page">
+	<section class="front-page container">
 		<nav class="navigation">
 			<a href="" class="logo-link"><img src="/img/goit-logo.svg" alt="logo">
 			</a>
@@ -257,6 +257,103 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- !CALLBACK -->
+
+	<section class="callback-form">
+		<div class="container">
+			<form action="" class="callback-form-container">
+				<h3 class="callback-form-title">/Are you minding [a project?]</h3>
+				<p class="callback-form-descr">Leave a request to discuss the task and technical requirements
+				</p>
+				<input type="text" class="callback-form-input" placeholder="Name">
+				<input type="email" id="email" name="Email" class="callback-form-input" placeholder="Email">
+				<input type="tel" id="phone" name="Phone" class="callback-form-input" placeholder="Phone"
+					pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+				<input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
+			</form>
+		</div>
+	</section>
+
+	<!-- !CALCULATOR -->
+
+	<section class="calculator">
+		<div class="container">
+			<h3 class="calculator-title section-title">Calculate_ the cost of a future project</h3>
+			<p class="calculator-subtitle">
+				<span>This is an</span>
+				<span class="calculator-subtitle-accent">approximate</span>
+				<span> calculation.</span> </p>
+			<img src="/img/calculator.svg" alt="calculator" class="calculator-image">
+			<p class="calculator-descr">/ The final cost depends on the technical requirements, terms, specifics of
+				your project.</p>
+
+			<form action="" class="calc-form">
+				<div class="calc-form-input"><label for="calc-form-website-type" class="calc-form-title">What should be
+						done:</label>
+					<select name="website-type" id="calc-form-website-type" class="calc-form-select">
+						<option value="landing-page">Landing Page</option>
+						<option value="website" selected="">WebSite</option>
+						<option value="cms">CMS</option>
+						<option value="portal">Portal</option>
+						<option value="e-shop">E-Shop</option>
+					</select>
+				</div>
+
+				<div class="calc-form-input"><label for="calc-form-technologies" class="calc-form-title">Choose preferred
+						technologies</label>
+					<select name="technologies" id="calc-form-technologies" class="calc-form-select">
+						<option value="css">CSS</option>
+						<option value="html">HTML</option>
+						<option value="js">Js</option>
+						<option value="react">React</option>
+						<option value="php">PHP</option>
+					</select>
+				</div>
+
+				<div class="calc-form-input">
+					<label for="" class="calc-form-title">Personal account and shopping cart:</label>
+					<div class="calc-form-input-radio-container">
+						<input type="radio" class="calc-form-input-field" id="calc-form-input-cart-yes" name="yes">
+						<label for="calc-form-input-cart-yes" class="calc-form-input-lable">Yes</label>
+						<input type="radio" class="calc-form-input-field" id="calc-form-input-cart-no" name="no">
+						<label for="calc-form-input-cart-no" class="calc-form-input-lable">No</label>
+					</div>
+
+				</div>
+				<div class="calc-form-input">
+					<label for="" class="calc-form-title">Requests reception on your email:</label>
+					<div class="calc-form-input-radio-container">
+						<input type="radio" class="calc-form-input-field" id="calc-form-input-cart-yes" name="yes">
+						<label for="calc-form-input-cart-yes" class="calc-form-input-lable">Yes</label>
+						<input type="radio" class="calc-form-input-field" id="calc-form-input-cart-no" name="no">
+						<label for="calc-form-input-cart-no" class="calc-form-input-lable">No</label>
+					</div>
+				</div>
+				<div class="calc-form-output">
+					<p class="calc-form-total">Cost:</p>
+					<p class="calc-form-total-cost">250$</p>
+				</div>
+				<input type="submit" value="Find out the cost  —" class="calc-form-btn accent-btn">
+			</form>
+		</div>
+	</section>
+
+	<!-- !FOOTER -->
+
+	<section class="footer-container container">
+		<h3 class="footer-name">Aleksandr Shulzhenko</h3>
+		<p class="footer-title">Frontend Developer</p>
+		<a href="tel:+380965225452" class="footer-phone">+380965225452</a>
+		<a href="mailto:aleks.mailbox3@gmail.com" class="footer-mail">aleks.mailbox3@gmail.com</a>
+		<div class="footer-social">
+			<a href="#"><i class="fab fa-github-square"></i></a>
+			<a href="#"><i class="fab fa-linkedin"></i></a>
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<a href="#"><i class="fab fa-instagram-square"></i></a>
+		</div>
+	</section>
+
 </body>
 
 </html>
