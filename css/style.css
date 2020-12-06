@@ -526,37 +526,37 @@ body {
 	color: var(--txt-c-light);
 	margin: 0 0 30px 0;
 }
-.calc-form {
+.calculator-form {
 	background: var(--c-light);
 	padding: 30px;
 	margin-bottom: 15px;
 }
-.calc-form-input {
+.calculator-form-input {
 	display: flex;
 	flex-direction: column;
 }
-.calc-form-title {
+.calculator-form-title {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 150%;
 	margin: 0 0 15px 0;
 }
-.calc-form-select {
+.calculator-form-select {
 	width: 240px;
 	border: none;
 	border-bottom: 1px solid var(--c-grey-blue);
 	margin: 0 0 25px 0;
 }
-.calc-form-input-radio-container {
+.calculator-form-input-radio-container {
 	margin: 0 0 30px 0;
 }
-.calc-form-total {
+.calculator-form-total {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 150%;
 	margin: 0;
 }
-.calc-form-total-cost {
+.calculator-form-total-cost {
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 150%;
@@ -564,7 +564,7 @@ body {
 	align-items: center;
 	margin: 0 0 20px 0;
 }
-.calc-form-btn {
+.calculator-form-btn {
 	padding: 15px 30px 15px 10px;
 	margin-bottom: 10px;
 }
@@ -612,4 +612,48 @@ body {
 	text-decoration: none;
 	padding: 0 15px 0 15px;
 	font-size: 25px;
+}
+
+/* MULTI SELECT */
+
+.calculator-form-input .tech-input-container .choices__item {
+	background: var(--c-accent);
+	border: none;
+	border-radius: 3px;
+	position: relative;
+}
+
+.calculator-form-input .tech-input-container:after {
+	content: "\f107";
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: 10px;
+	top: 45%;
+	margin-top: -2.5px;
+	cursor: pointer;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+.calculator-form-input .tech-input-container {
+	background: transparent;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid var(--c-grey);
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+	min-height: 35px;
+	box-sizing: border-box;
+}
+
+.calculator-form-input .choices__input {
+	display: none;
+}
+
+.calculator-form-input .choices__item .choices__button {
+	border-left: none;
+	margin: 0;
+	padding-left: 8px;
 }
