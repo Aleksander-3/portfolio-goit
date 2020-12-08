@@ -5,6 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
+	<style>
+		.modal {
+			display: none;
+		}
+	</style>
 	<link rel="stylesheet" href="/css/normalize.min.css">
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/choices.min.css">
@@ -124,7 +129,7 @@
 
 	<!-- TODO: Добавлен готовый код с урока -->
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container container-left">
 			<h3 class="section-title about-title">I code things from scratch_</h3>
 			<p class="about-descr">
@@ -150,7 +155,7 @@
 		</div>
 	</section>
 
-	<section class="personal-projects">
+	<section class="personal-projects" id="personal-projects">
 		<div class="container">
 			<h3 class="section-title personal-projects-title">My personal _projects</h3>
 
@@ -278,7 +283,7 @@
 
 	<!-- !CALCULATOR -->
 
-	<section class="calculator">
+	<section class="calculator" id="calculator">
 		<div class="container">
 			<h3 class="calculator-title section-title">Calculate_ the cost of a future project</h3>
 			<p class="calculator-subtitle">
@@ -346,18 +351,48 @@
 
 	<!-- !FOOTER -->
 
-	<section class="footer-container container">
+	<footer class="footer-container container" id="contacts">
 		<h3 class="footer-name">Aleksandr Shulzhenko</h3>
 		<p class="footer-title">Frontend Developer</p>
-		<a href="tel:+380965225452" class="footer-phone">+380965225452</a>
-		<a href="mailto:aleks.mailbox3@gmail.com" class="footer-mail">aleks.mailbox3@gmail.com</a>
+		<a href="tel:+380965225452" class="footer-my-phone">+380965225452</a>
+		<a href="mailto:aleks.mailbox3@gmail.com" class="footer-my-mail">aleks.mailbox3@gmail.com</a>
 		<div class="footer-social">
 			<a href="#"><i class="fab fa-github-square"></i></a>
 			<a href="#"><i class="fab fa-linkedin"></i></a>
 			<a href="#"><i class="fab fa-facebook-square"></i></a>
 			<a href="#"><i class="fab fa-instagram-square"></i></a>
 		</div>
-	</section>
+	</footer>
+
+	<!-- !MODALS -->
+	<div class="modals-wraper">
+		<!-- !MOBILE MENU -->
+		<div class="modal modal-mobile-menu">
+			<div class="modal-mobile-content">
+				<div class="container mobile-menu-container">
+					<i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
+					<nav class="mobile-menu-items">
+						<a href="#about" class="mobile-menu-item">ABOUT</a>
+						<a href="#personal-projects" class="mobile-menu-item">PROJECTS</a>
+						<a href="#calculator" class="mobile-menu-item">COST CALCULATOR</a>
+						<a href="#contacts" class="mobile-menu-item">CONTACTS</a>
+					</nav>
+					<div class="mobile-menu-contacts">
+						<a href="tel:+380965225452" class="mobile-menu-my-phone">+380965225452</a>
+						<a href="mailto:aleks.mailbox3@gmail.com" class="mobile-menu-my-mail">aleks.mailbox3@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-active">
+		<div class="my-video-container">
+			<i class="fas fa-times modal-close-btn my-video-close-btn"></i>
+			<video class="my-video-content" src="/video.mp4" controls></video>
+		</div>
+	</div>
+
 
 	<script src="/js/choices.min.js"></script>
 	<script src="/js/calculator.js"></script>

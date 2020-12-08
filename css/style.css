@@ -16,6 +16,9 @@
 	--txt-c-accent: var(--c-accent);
 	--txt-c-light: var(--c-light);
 
+	/* modal */
+	--modal-bgd-dark: rgb(20, 29, 45, 0.8);
+
 	/* font */
 	--font-main: "Acrom", sans-serif;
 
@@ -60,6 +63,9 @@
 	font-style: normal;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Acrom", sans-serif;
 	box-sizing: border-box;
@@ -78,7 +84,111 @@ body {
 	border: none;
 	cursor: pointer;
 }
+
+/* !MODALS */
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: opasity 0.3s ease-in-out;
+	pointer-events: none;
+	display: block;
+	background: var(--modal-bgd-dark);
+}
+.modal-active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+/* !MOBILE MODALS */
+
+.modal-mobile-menu {
+	background: var(--c-light);
+}
+.modal-mobile-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+}
+.mmobile-menu-container {
+	height: 70%;
+	justify-content: space-between;
+	margin: 0;
+}
+.modal-close-btn {
+	font-size: 18px;
+	position: absolute;
+	color: var(--c-grey-blue);
+	top: 16px;
+	right: 16px;
+	cursor: pointer;
+}
+.mobile-menu-close-btn {
+	background: var(--c-accent);
+	color: var(--c-light);
+	padding: 10px 16px;
+}
+.mobile-menu-items {
+	display: flex;
+	flex-direction: column;
+	widows: 100%;
+}
+.mobile-menu-item {
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--txt-c-grey);
+	text-decoration: none;
+	text-align: center;
+	margin: 0 0 35px 0;
+}
+.mobile-menu-contacts {
+	display: flex;
+	flex-direction: column;
+}
+.mobile-menu-my-phone {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	text-decoration: none;
+	color: var(--txt-c-dark);
+	margin: 0 0 15px 0;
+}
+.mobile-menu-my-mail {
+	font-size: 17px;
+	line-height: 150%;
+	text-align: center;
+	text-decoration: none;
+	color: var(--txt-c-dark);
+	margin: 0 0 5px 0;
+}
+
+/* !MY VIDEO MODAL */
+.my-video-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 20px 10px;
+}
+.my-video-content {
+	width: 100%;
+}
+.my-video-close-btn {
+	background: var(--c-light);
+	color: var(--txt-c-dark);
+	padding: 10px 14px;
+}
+
 /* !FRONT PAGE */
+
 .navigation {
 	width: 100%;
 	display: flex;
@@ -582,7 +692,7 @@ body {
 	text-align: center;
 	margin: 0 30px 20px 30px;
 }
-.footer-phone {
+.footer-my-phone {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 150%;
@@ -591,7 +701,7 @@ body {
 	color: var(--txt-c-dark);
 	margin: 0 0 15px 0;
 }
-.footer-mail {
+.footer-my-mail {
 	font-size: 17px;
 	line-height: 150%;
 	text-align: center;
