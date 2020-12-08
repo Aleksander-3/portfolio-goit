@@ -191,53 +191,53 @@ body {
 }
 
 /* !HIRE ME MODAL */
-.hire-me-container {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
+.received-request-menu {
 	display: flex;
-	text-align: center;
+	justify-content: center;
 	align-items: center;
-	max-width: 605px;
-	height: 300px;
 	padding: 20px 10px;
-	background: var(--c-light);
-	margin: auto;
+	box-sizing: border-box;
 }
-.modal-hire-me-btn {
+.received-request-container {
+	background: var(--c-light);
+	padding: 80px 10px;
+	position: relative;
+}
+.modal-received-request-btn {
 	background: var(--c-light);
 	color: var(--txt-c-dark);
 	padding: 10px 14px;
 }
-.hire-me-content {
-	min-width: 300px;
-	width: 605px;
+.received-request-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.hire-me-title {
+.received-request-title {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: var(--txt-c-accent);
-	margin: 80px 100px 15px;
+	margin: 0 0 20px 0;
 }
-.hire-me-description {
+.received-request-description {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 31px;
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--txt-c-dark);
-	margin: 15px 30px;
+	margin: 0 0 20px 0;
 }
-.hire-me-text {
+.received-request-text {
 	font-size: 17px;
 	line-height: 22px;
 	text-align: center;
 	color: var(--txt-c-dark);
-	margin: 0 60px 80px;
+	width: 185px;
+	margin: 0;
 }
 
 /* !FRONT PAGE */
@@ -256,7 +256,7 @@ body {
 }
 .logo-link {
 }
-.hire-me-btn {
+.received-request-btn {
 	font-weight: 800;
 	font-size: 15px;
 	line-height: 18px;
