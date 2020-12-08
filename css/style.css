@@ -192,14 +192,19 @@ body {
 
 /* !HIRE ME MODAL */
 .hire-me-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	display: flex;
 	text-align: center;
 	align-items: center;
-	border: 2px solid red;
 	max-width: 605px;
 	height: 300px;
 	padding: 20px 10px;
 	background: var(--c-light);
+	margin: auto;
 }
 .modal-hire-me-btn {
 	background: var(--c-light);
