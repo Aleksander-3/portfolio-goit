@@ -190,31 +190,31 @@ body {
 	padding: 10px 14px;
 }
 
-/* !HIRE ME MODAL */
-.received-request-menu {
+/* !REQUEST RECEIVED MODAL */
+.request-received-menu {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 20px 10px;
 	box-sizing: border-box;
 }
-.received-request-container {
+.request-received-container {
 	background: var(--c-light);
 	padding: 80px 10px;
 	position: relative;
 }
-.modal-received-request-btn {
+.modal-request-received-btn {
 	background: var(--c-light);
 	color: var(--txt-c-dark);
 	padding: 10px 14px;
 }
-.received-request-content {
+.request-received-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-.received-request-title {
+.request-received-title {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 24px;
@@ -222,7 +222,7 @@ body {
 	color: var(--txt-c-accent);
 	margin: 0 0 20px 0;
 }
-.received-request-description {
+.request-received-description {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 31px;
@@ -231,7 +231,7 @@ body {
 	color: var(--txt-c-dark);
 	margin: 0 0 20px 0;
 }
-.received-request-text {
+.request-received-text {
 	font-size: 17px;
 	line-height: 22px;
 	text-align: center;
@@ -691,6 +691,9 @@ body {
 	margin: 0 0 31px 0;
 	text-align: center;
 	color: var(--txt-c-grey);
+}
+.callback-form-input-error {
+	border: 1px solid red;
 }
 .callback-form-submit {
 	padding: 15px 25px;
