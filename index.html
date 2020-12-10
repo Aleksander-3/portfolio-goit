@@ -33,8 +33,8 @@
 			[Aleksandr Shulzhenko]
 		</h1>
 		<h2 class="front-page-professional">
-			{Frontend}</br>
-			_developer
+			<span class="professional-part1">{Frontend}</span>
+			<span class="professional-part2">_developer</span>
 		</h2>
 		<p class="front-page-description">/ Using HTML, CSS, JavaScript, React Native and Node.js I help to build
 			websites, small and medium web apps for
@@ -42,13 +42,20 @@
 		<button class="front-page-gallery-btn accent-btn">
 			See my recent works —
 		</button>
-		<img src="/img/my-photo.jpg" alt="My Photo" class="front-page-my-photo">
-		<p class="front-page-my-description">
-			About me in 2 minutes
-		</p>
-		<button class="front-page-my-video-btn" id="my-video-btn">
-			<i class="fas fa-play"></i>play
-		</button>
+		<div class="front-page-my-info">
+			<img src="/img/my-photo.jpg" alt="My Photo" class="front-page-my-photo">
+			<div class="front-page-aboute-me-container">
+				<p class="front-page-my-description mobile-element">
+					About me in 2 minutes
+				</p>
+				<p class="front-page-my-description tablet-element">
+					About me<br> in 2 minutes
+				</p>
+				<button class="front-page-my-video-btn" id="my-video-btn">
+					<i class="fas fa-play"></i>play
+				</button>
+			</div>
+		</div>
 		<img src="/img/laptop.svg" alt="Laptop" class="front-page-laptop">
 
 		<!-- !EXPIRIENCE -->
@@ -130,13 +137,17 @@
 	<!-- TODO: Добавлен готовый код с урока -->
 
 	<section class="about" id="about">
-		<div class="container container-left">
+		<div class="container container-left about-container">
 			<h3 class="section-title about-title">I code things from scratch_</h3>
-			<p class="about-descr">
+			<p class="about-descr mobile-element">
 				<span>[and help to</span>
 				<span>create great web</span>
 				<span>apps]</span>
 			</p>
+			<p class="about-descr tablet-element">
+				<span>[and help to create<br></span>
+				<span>great web apps]</span>
+
 			<div class="about-img-container">
 				<p class="about-img-text">
 					WEB
@@ -152,6 +163,8 @@
 				/ My specialization is front-end development — client side of the web. But
 				I also have full-stack developer experience.
 			</p>
+
+
 		</div>
 	</section>
 
