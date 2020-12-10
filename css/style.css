@@ -969,8 +969,8 @@ body {
 		margin-bottom: 30px;
 	}
 	.about-descr {
-		font-size: 36px;
-		line-height: 43px;
+		font-size: 35px;
+		line-height: 45px;
 		margin-bottom: 60px;
 	}
 	.about-text {
@@ -1002,6 +1002,6 @@ body {
 	.team-projects-title-bgd {
 		font-size: 200px;
 		line-height: 240px;
-		top: 19px;
+		top: 20px;
 	}
 }
