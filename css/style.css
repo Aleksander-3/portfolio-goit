@@ -1078,8 +1078,8 @@ body {
 	}
 	.footer-my-contacts {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 40px;
+		right: 20px;
 	}
 	.footer-my-name,
 	.footer-my-profession {
