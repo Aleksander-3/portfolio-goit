@@ -299,13 +299,19 @@
 	<!-- !CALCULATOR -->
 
 	<section class="calculator" id="calculator">
-		<div class="container">
-			<h3 class="calculator-title section-title">Calculate_ the cost of a future project</h3>
-			<p class="calculator-subtitle">
+		<div class="container calculator-container">
+			<h3 class="calculator-title section-title mobile-element">Calculate_ the cost of a future project</h3>
+			<h3 class="calculator-title section-title tablet-element">Calculate_<br> the cost of a<br> future project</h3>
+			<p class="calculator-subtitle mobile-element">
 				<span>This is an</span>
 				<span class="calculator-subtitle-accent">approximate</span>
 				<span> calculation.</span> </p>
-			<img src="/img/calculator.svg" alt="calculator" class="calculator-image">
+			<p class="calculator-subtitle tablet-element">
+				<span>This is an approximate</span>
+				<span> calculation.</span> </p>
+			<div class="calculator-image-container">
+				<img src="/img/calculator.svg" alt="calculator" class="calculator-image">
+			</div>
 			<p class="calculator-descr">/ The final cost depends on the technical requirements, terms, specifics of
 				your project.</p>
 
@@ -366,16 +372,34 @@
 
 	<!-- !FOOTER -->
 
-	<footer class="footer-container container" id="contacts">
-		<h3 class="footer-name">Aleksandr Shulzhenko</h3>
-		<p class="footer-title">Frontend Developer</p>
-		<a href="tel:+380965225452" class="footer-my-phone">+380965225452</a>
-		<a href="mailto:aleks.mailbox3@gmail.com" class="footer-my-mail">aleks.mailbox3@gmail.com</a>
-		<div class="footer-social">
-			<a href="#"><i class="fab fa-github-square"></i></a>
-			<a href="#"><i class="fab fa-linkedin"></i></a>
-			<a href="#"><i class="fab fa-facebook-square"></i></a>
-			<a href="#"><i class="fab fa-instagram-square"></i></a>
+	<footer class="footer mobile-element" id="contacts">
+		<div class="container">
+			<h3 class="footer-my-name">Aleksandr Shulzhenko</h3>
+			<p class="footer-my-profession">Frontend Developer</p>
+			<a href="tel:+380965225452" class="footer-my-tel">+380965225452</a>
+			<a href="mailto:aleks.mailbox3@gmail.com" class="footer-my-mail">aleks.mailbox3@gmail.com</a>
+			<div class="footer-social-links">
+				<a href="#"><i class="fab fa-github-square"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fab fa-instagram-square"></i></a>
+			</div>
+		</div>
+	</footer>
+	<footer class="footer tablet-element" id="contacts">
+		<div class="container">
+			<h3 class="footer-my-name">Aleksandr Shulzhenko</h3>
+			<p class="footer-my-profession">Frontend Developer</p>
+			<div class="footer-my-contacts">
+				<a href="tel:+380965225452" class="footer-my-tel">+380965225452</a>
+				<a href="mailto:aleks.mailbox3@gmail.com" class="footer-my-mail">aleks.mailbox3@gmail.com</a>
+			</div>
+			<div class="footer-social-links">
+				<a href="#"><i class="fab fa-github-square"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fab fa-instagram-square"></i></a>
+			</div>
 		</div>
 	</footer>
 

@@ -460,7 +460,7 @@ body {
 /* !COMMON */
 
 .container {
-	min-width: 320px;
+	min-width: 300px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -726,7 +726,7 @@ body {
 	margin: 30px 20px 20px 20px;
 }
 .calculator-subtitle {
-	display: inline-block;
+	width: 270px;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 150%;
@@ -796,20 +796,20 @@ body {
 	margin-bottom: 10px;
 }
 /* !FOOTER */
-.footer-name {
+.footer-my-name {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 150%;
 	text-align: center;
 	margin: 0 30px 0 30px;
 }
-.footer-title {
+.footer-my-profession {
 	font-size: 17px;
 	line-height: 150%;
 	text-align: center;
 	margin: 0 30px 20px 30px;
 }
-.footer-my-phone {
+.footer-my-tel {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 150%;
@@ -826,14 +826,14 @@ body {
 	color: var(--txt-c-dark);
 	margin: 0 0 30px 0;
 }
-.footer-social {
+.footer-social-links {
 	display: flex;
 	flex-direction: row;
 }
-.footer-social a {
+.footer-social-links a {
 	background: transparent;
 }
-.footer-social .fab {
+.footer-social-links .fab {
 	color: var(--c-dark);
 	width: 100%;
 	text-decoration: none;
@@ -841,7 +841,7 @@ body {
 	font-size: 25px;
 }
 
-/* MULTI SELECT */
+/* !MULTI SELECT */
 
 .calculator-form-input .tech-input-container .choices__item {
 	background: var(--c-accent);
@@ -887,7 +887,7 @@ body {
 
 @media only screen and (min-width: 640px) {
 	.container {
-		min-width: 640px;
+		min-width: 620px;
 		padding-bottom: 70px;
 		margin: 0;
 	}
@@ -977,7 +977,6 @@ body {
 		width: 320px;
 	}
 	.about-text:last-child {
-		width: 320px;
 		margin-bottom: 80px;
 	}
 	.team-projects-title,
@@ -1003,5 +1002,101 @@ body {
 		font-size: 200px;
 		line-height: 240px;
 		top: 20px;
+	}
+	.callback-form-container {
+		padding: 75px 30px 80px 30px;
+	}
+	.callback-form-title {
+		width: 380px;
+		font-size: 36px;
+		line-height: 43px;
+	}
+	.callback-form-descr,
+	.callback-form-input,
+	.callback-form-submit {
+		width: 360px;
+		box-sizing: border-box;
+	}
+	.callback-form-submit {
+		margin-top: 10px;
+	}
+	.calculator {
+		position: relative;
+	}
+	.calculator-container {
+		align-items: flex-start;
+	}
+	.calculator-title {
+		font-size: 50px;
+		line-height: 60px;
+		width: 605px;
+		text-align: left;
+		margin: 40px 0 40px 0;
+	}
+	.calculator-subtitle {
+		width: 585px;
+		text-align: left;
+		font-size: 36px;
+		line-height: 150%;
+		margin-bottom: 45px;
+	}
+	.calculator-subtitle span {
+		padding: 14px;
+	}
+
+	.calculator-image-container {
+		position: absolute;
+		top: 405px;
+		right: 20px;
+	}
+	.calculator-image {
+		width: 345px;
+	}
+	.calculator-descr {
+		width: 330px;
+		text-align: left;
+		margin-bottom: 55px;
+	}
+	.calculator-form {
+		box-sizing: border-box;
+		width: 600px;
+		padding: 60px 80px 70px;
+		z-index: 1;
+		margin: 0;
+	}
+	.calculator-form-select {
+		width: 100%;
+	}
+
+	.calculator-form-btn {
+		width: 100%;
+	}
+	.footer .container {
+		position: relative;
+		padding: 40px 20px 60px 20px;
+		align-items: flex-start;
+	}
+	.footer-my-contacts {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.footer-my-name,
+	.footer-my-profession {
+		text-align: left;
+		margin: 0;
+	}
+	.footer-my-profession {
+		margin-bottom: 20px;
+	}
+	.footer-social-links .fab {
+		padding: 0 30px 0 0;
+	}
+
+	.footer-my-tel,
+	.footer-my-mail {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
 	}
 }
