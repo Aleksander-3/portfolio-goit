@@ -181,6 +181,9 @@ body {
 }
 
 /* !MY VIDEO MODAL */
+#my-video-modal {
+	z-index: 5;
+}
 .my-video-container {
 	display: flex;
 	justify-content: center;
@@ -190,11 +193,13 @@ body {
 }
 .my-video-content {
 	width: 100%;
+	z-index: 5;
 }
 .my-video-close-btn {
 	background: var(--c-light);
 	color: var(--txt-c-dark);
 	padding: 10px 14px;
+	z-index: 6;
 }
 
 /* !REQUEST RECEIVED MODAL */
@@ -1113,6 +1118,9 @@ body {
 	.desktop-element {
 		display: block;
 	}
+	.desktop-menu-items {
+		margin-left: 155px;
+	}
 	.desktop-menu-item {
 		font-size: 15px;
 		line-height: 18px;
@@ -1123,6 +1131,9 @@ body {
 		text-align: center;
 		margin: 0 35px 0 0;
 		cursor: pointer;
+	}
+	.desktop-menu-item:last-child {
+		margin: 0;
 	}
 	.desktop-menu-item:hover {
 		color: var(--txt-c-accent);
